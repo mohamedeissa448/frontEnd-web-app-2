@@ -1,0 +1,66 @@
+body{
+    background-color: #a9d7d1;
+    text-align: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    min-width: 320px;
+}
+#outer-form{
+  text-align: center;
+  margin:auto;
+  width:70%;
+  max-width: 900px;
+  background-color:white;
+  padding-top: 1em;
+}
+form{
+  padding:20px 10px 10px 10px;
+}
+.radio{
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  margin: 1em auto 1em auto;
+}
+.item{
+  margin-bottom: 7px;
+}
+#name,#email,#age{
+  margin: 10px 0px;
+  padding: 5px;
+  width: 280px;
+}
+#status{
+  width: 100px;
+  height: 30px;
+}
+.row{
+  margin: 13px 0;
+}
+.commenting{
+  display: flex;
+  justify-content:center;
+  margin-top: 2em;
+}
+textarea{
+  margin-left: 20px;
+}
+button{
+  background-color: #59ace0;
+  width:96px;
+  height: 50px;
+  padding: 4px;
+  font-size: 1.4em;
+  color: #fff;
+}
+@media (max-width:600px) {
+  .commenting,.med{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #status,.item{margin-top: 10px}
+  textarea{width: 90%}
+
+
+}

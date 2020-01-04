@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>seHtml&Css</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<h1 id="title">Survey Form</h1>
+<main>
+  <div id="outer-form">
+    <p id="description">
+      Let us know how we can improve freeCodeCamp
+    </p>
+    <form id="survey-form" method="Post">
+      <div class="row">
+      <label id="name-label"for="name">Name:</label>
+        <input id="name" name="name"type="text"placeholder="Enter your name"required>
+      </div>
+      <div class="row">
+      <label id="email-label" for="email">Email:</label>
+        <input id="email"name="email" type="email" placeholder="Enter your email"required>
+      </div>
+        <div class="row">
+      <label id="number-label" for="number">Age:</label>
+        <input id="number" name="age"type="number" min="1"max="15" placeholder="Age" required>
+      </div>
+      <div class="row med">
+      <label id="dropdown" for="status">Which option best describes your current role?</label>
+        <select id="status"name="role" required>
+          <option disabled value>Select an option</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time     Job</option>
+          <option value="Part Time Job">Part Time Job</option>
+          <option value="Prefer nOT tO sAY">Prefer nOT tO sAY</option>
+          <option value="Other">Other</option>
+        </select>
+        </div>
+        <div class="row ">
+          <label id="radio-question" for="Definitely">* How likely is that you would recommend freeCodeCamp to a friend?:</label>
+          <div class="radio">
+            <div class="item"><input id="Definitely" name="radio-buttons"type="radio" value="1"><label>Definitely</label></div>
+            <div class="item"><input id="Maybe" name="radio-buttons"type="radio" value="2"><label>Maybe</label></div>
+            <div class="item"><input id="Not sure" name="radio-buttons"type="radio" value="3"><label>Not sure</label></div>
+          </div>
+          </div>
+          <div class="row">
+            <label>Things that should be improved in the future
+            (Check all that apply):</label><br>
+                  <div class="item">  <input type="checkbox" name="Data Visualization
+            " value="1"> Data Visualization</div>
+
+          <div class="item">  <input type="checkbox" name="Front-end Projects" value="2"> Front-end Projects</div>
+          <div class="item"><input type="checkbox" name="Back-end Projects" value="3" checked>Back-end Projects</div>
+          </div>
+          <div class="row commenting">
+           <label for="comments" style="height:50px;">Any Comments or Suggestions?         </label>
+          <textarea id="comments" style="height:50px;"
+                    placeholder="Enter your comment here"></textarea>
+          </div>
+          <div class="row">
+           <button id="submit" type="submit">Submit</button>
+          </div>
+  </form>
+  </div>
+</main>
+
+
+  </body>
+</html>
